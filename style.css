@@ -17,16 +17,100 @@
 }
 
 body {
-    color      : var(--black);
-    font-family: 'Figtree', sans-serif;
-    font-weight: 600;
-    height     : 100vh;
-    width      : 100vw;
+    align-items     : center;
+    background-color: var(--yellow);
+    color           : var(--black);
+    display         : flex;
+    flex-direction  : column;
+    font-family     : 'Figtree', sans-serif;
+    font-weight     : 600;
+    height          : 100vh;
+    justify-content : center;
+    width           : 100vw;
+}
+
+.card {
+    background-color: var(--white);
+    height          : 30em;
+    padding         : 1.5em;
+    width           : 20em;
+    border-radius   : 1em;
+    border          : 1px solid var(--black);
+    box-shadow      : 5px 5px 0 var(--black);
+    transition      : all ease-in-out .2s;
+    cursor          : pointer;
+}
+
+/* Card Hover State */
+.card:hover {
+    box-shadow: 10px 10px 0 var(--black);
+}
+
+.card-image {
+    height       : auto;
+    margin-bottom: 1.5em;
+    width        : 100%;
+    border-radius: .5em;
+}
+
+.card-body {
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-between;
+    height         : max-content;
+    gap            : 1em;
+}
+
+.tag {
+    width           : max-content;
+    padding         : .25em .75em;
+    background-color: var(--yellow);
+    border-radius   : .25em;
+    font-weight     : 800;
+}
+
+.date {
+    font-size  : .95em;
+    font-weight: 500;
+}
+
+.title {
+    font-size  : 1.25em;
+    font-weight: 800;
+    transition : all ease-in-out .2s;
+}
+
+/* Card Title hover state */
+.title:hover {
+    color: var(--yellow);
+}
+
+.body-text {
+    color      : var(--grey);
+    font-weight: 400;
+    font-size  : .95em;
+    line-height: 1.5em;
+}
+
+.author {
+    display    : flex;
+    align-items: center;
+    gap        : .75em;
+}
+
+.author-photo {
+    width        : 2em;
+    border-radius: 50%;
+}
+
+.author-name {
+    font-weight: 800;
 }
 
 .attribution {
-    font-size : 11px;
+    font-size : .85em;
     text-align: center;
+    margin-top: 2em;
 }
 
 .attribution a {
